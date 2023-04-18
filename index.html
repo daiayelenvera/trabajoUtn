@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>TuTorta.com</title>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> <!-- para generar el Pdf-->
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>TuTorta.com</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Haga su pedido">
+                        <svg x="0px" y="0px"
+                        width="20px" height="20px" viewBox="0 0 510 510" >
+                        <g id="shopping-cart">
+                            <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+                                c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+                                c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+                                c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"/>
+                        </g>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#Haga su pedido">Haga su pedido</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#about-me">Sobre mi</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="bebetorta.png" alt="BebeComiendo">
+
+        <section id="about">
+            <h2>Sobre nosotros</h2>
+            <p>TuTorta.com es una pastelería en línea que se dedica a la elaboración y entrega de
+                deliciosas tortas en todo el país. Nos enorgullece ofrecer una
+                gran variedad de sabores y diseños que se adaptan a cualquier ocasión.
+                Una empresa de tradición familiar dedicada a la elaboración y comercialización de productos alimenticios que creció en base a un ideal de dedicación y servicio.
+                Disponemos de 12 sucursales que brindan un servicio abierto todos los días del año y de reparto completo
+                 en todas áreas de la ciudad de Rosario, Funes, Roldán, Villa G. Galvez y alrededores. Además, contamos con una planta de elaboración exclusiva para postres y 
+                 variedades, como así una flota de vehículos acondicionados para satisfacer el traslado y demanda en servicios de lunch.</p>
+        </section>
+
+        <img src="pastelera.png" alt="Pastelera" class="pasteleraimg">
+        <section id="about-me">
+            <h2>Sobre mi</h2>
+            <div class="texto-imagen">
+                <p> Somos un equipo altamente capacitado y entusiasta que ama su trabajo. Contamos con una amplia trayectoria y estamos completamente comprometidos en ofrecer 
+                    un servicio excepcional y lograr resultados sorprendentes para nuestros clientes.
+                    Nuestro equipo está conformado por:
+                </p>
+                <img src="brindar.png" alt="Brindar" class="imagen-derecha">
+            </div>
+        </section>
+        
+      
+        <section id="menu">
+             <h2>Menú</h2>
+                <div class="image-container">
+
+                    <div class="item">
+                        <img src="https://1.bp.blogspot.com/-eRfwsYX67xs/YHI-GH8K0NI/AAAAAAAAjyk/VKi_xgLuN1YFJSWIjB4r1Wkr3i5EQmVFACLcBGAsYHQ/s2048/DSCN0005-01%2B%25281%2529.jpeg"
+                            alt="Torta de Chocolate">
+                        <h3>Torta de chocolate</h3>
+                        <p>Deliciosa torta de chocolate con cubierta de ganache y decoración de frutas frescas. Disponible
+                            en tamaños de 8 y 10 porciones.</p>
+                            <h4>$3.000</h4>
+                        <button class="add-cart-button" type="submit">
+                            <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.39 11.5C10.39 11.09 10.73 10.75 11.14 10.75H12.39V9.5C12.39 9.09 12.73 8.75 13.14 8.75C13.55 8.75 13.89 9.09 13.89 9.5V10.75H15.14C15.55 10.75 15.89 11.09 15.89 11.5C15.89 11.91 15.55 12.25 15.14 12.25H13.89V13.5C13.89 13.91 13.55 14.25 13.14 14.25C12.73 14.25 12.39 13.91 12.39 13.5V12.25H11.14C10.73 12.25 10.39 11.91 10.39 11.5ZM11.25 18.75C11.25 19.58 10.58 20.25 9.75 20.25C8.92 20.25 8.25 19.58 8.25 18.75C8.25 17.92 8.92 17.25 9.75 17.25C10.58 17.25 11.25 17.92 11.25 18.75ZM17.75 18.75C17.75 19.58 17.08 20.25 16.25 20.25C15.42 20.25 14.75 19.58 14.75 18.75C14.75 17.92 15.42 17.25 16.25 17.25C17.08 17.25 17.75 17.92 17.75 18.75ZM20.73 7.68L18.73 15.68C18.65 16.01 18.35 16.25 18 16.25H8C7.64 16.25 7.33 15.99 7.26 15.63L5.37 5.25H4C3.59 5.25 3.25 4.91 3.25 4.5C3.25 4.09 3.59 3.75 4 3.75H6C6.36 3.75 6.67 4.01 6.74 4.37L7.17 6.75H20C20.23 6.75 20.45 6.86 20.59 7.04C20.73 7.22 20.78 7.46 20.73 7.68ZM19.04 8.25H7.44L8.62 14.75H17.41L19.03 8.25H19.04Z" fill="#000000"/>
+                                </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+           
+                <div class="item">
+                    <img src="https://annaspasteleria.com/wp-content/uploads/2017/07/20-2009-post/DSC_6667web.jpg"
+                        alt="Torta de Vainilla">
+                    <h3>Torta de vainilla</h3>
+                    <p>Torta de vainilla esponjosa con crema de mantequilla y decoración de flores comestibles.
+                        Disponible en tamaños de 6 y 8 porciones.</p>
+                        <h4>$2.000</h4>
+                    <button class="add-cart-button" type="submit">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.39 11.5C10.39 11.09 10.73 10.75 11.14 10.75H12.39V9.5C12.39 9.09 12.73 8.75 13.14 8.75C13.55 8.75 13.89 9.09 13.89 9.5V10.75H15.14C15.55 10.75 15.89 11.09 15.89 11.5C15.89 11.91 15.55 12.25 15.14 12.25H13.89V13.5C13.89 13.91 13.55 14.25 13.14 14.25C12.73 14.25 12.39 13.91 12.39 13.5V12.25H11.14C10.73 12.25 10.39 11.91 10.39 11.5ZM11.25 18.75C11.25 19.58 10.58 20.25 9.75 20.25C8.92 20.25 8.25 19.58 8.25 18.75C8.25 17.92 8.92 17.25 9.75 17.25C10.58 17.25 11.25 17.92 11.25 18.75ZM17.75 18.75C17.75 19.58 17.08 20.25 16.25 20.25C15.42 20.25 14.75 19.58 14.75 18.75C14.75 17.92 15.42 17.25 16.25 17.25C17.08 17.25 17.75 17.92 17.75 18.75ZM20.73 7.68L18.73 15.68C18.65 16.01 18.35 16.25 18 16.25H8C7.64 16.25 7.33 15.99 7.26 15.63L5.37 5.25H4C3.59 5.25 3.25 4.91 3.25 4.5C3.25 4.09 3.59 3.75 4 3.75H6C6.36 3.75 6.67 4.01 6.74 4.37L7.17 6.75H20C20.23 6.75 20.45 6.86 20.59 7.04C20.73 7.22 20.78 7.46 20.73 7.68ZM19.04 8.25H7.44L8.62 14.75H17.41L19.03 8.25H19.04Z" fill="#000000"/>
+                            </svg>
+                        Añadir al carrito
+                    </button>
+                </div> 
+                
+                 <div class="item">
+                    <img src="https://c8.alamy.com/compes/2f1mt5t/un-tiro-vertical-de-un-delicioso-pastel-de-frutas-con-bayas-y-flores-en-la-parte-superior-sobre-una-mesa-blanca-2f1mt5t.jpg"
+                        alt="Torta de Frutas">
+                    <h3>Torta de frutas</h3>
+                    <p>Torta de frutas mixtas con crema chantilly, dulce de leche y decoración de chocolate. Disponible
+                        en tamaños de 10 y 12 porciones.</p>
+                        <h4>$2.500</h4>
+                        <button class="add-cart-button" type="submit">
+                            <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.39 11.5C10.39 11.09 10.73 10.75 11.14 10.75H12.39V9.5C12.39 9.09 12.73 8.75 13.14 8.75C13.55 8.75 13.89 9.09 13.89 9.5V10.75H15.14C15.55 10.75 15.89 11.09 15.89 11.5C15.89 11.91 15.55 12.25 15.14 12.25H13.89V13.5C13.89 13.91 13.55 14.25 13.14 14.25C12.73 14.25 12.39 13.91 12.39 13.5V12.25H11.14C10.73 12.25 10.39 11.91 10.39 11.5ZM11.25 18.75C11.25 19.58 10.58 20.25 9.75 20.25C8.92 20.25 8.25 19.58 8.25 18.75C8.25 17.92 8.92 17.25 9.75 17.25C10.58 17.25 11.25 17.92 11.25 18.75ZM17.75 18.75C17.75 19.58 17.08 20.25 16.25 20.25C15.42 20.25 14.75 19.58 14.75 18.75C14.75 17.92 15.42 17.25 16.25 17.25C17.08 17.25 17.75 17.92 17.75 18.75ZM20.73 7.68L18.73 15.68C18.65 16.01 18.35 16.25 18 16.25H8C7.64 16.25 7.33 15.99 7.26 15.63L5.37 5.25H4C3.59 5.25 3.25 4.91 3.25 4.5C3.25 4.09 3.59 3.75 4 3.75H6C6.36 3.75 6.67 4.01 6.74 4.37L7.17 6.75H20C20.23 6.75 20.45 6.86 20.59 7.04C20.73 7.22 20.78 7.46 20.73 7.68ZM19.04 8.25H7.44L8.62 14.75H17.41L19.03 8.25H19.04Z" fill="#000000"/>
+                                </svg>
+                            Añadir al carrito
+                        </button>
+                </div>
+            </div> 
+               
+        </section>
+
+       
+
+        <section id="Haga su pedido">
+            <form class="formpedido">
+                <h2>Haga su pedido</h2>
+        
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="torta">Sabor de la torta:</label>
+                <select id="torta" name="torta">
+                  <option value="chocolate">Torta de chocolate</option>
+                  <option value="vainilla">Torta de vainilla</option>
+                  <option value="frutas">Torta de frutas</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+        
+                <button type="submit" onclick="generarPDF()">Generar PDF</button>
+            </form>
+        </section>
+
+       <!-- RESUMEN-->
+
+<section> 
+    <div>
+        <p id="valor">Valoramos tu opinión.
+    Trabajamos continuamente en mejorar nuestro servicio por eso valoramos cualquier comentario, sugerencia o reclamo que quieras dejarnos.
+    Gracias por elegirnos.
+</p>
+</div> 
+</section>
+
+
+        <section id="contact">
+            
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" onclick="enviarFormulario()">Enviar</button>
+
+            </form>
+        </section>
+
+    
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; TuTorta.com 2023</p>
+    </footer>
+
+    
+    
+</body>
+
+</html>
