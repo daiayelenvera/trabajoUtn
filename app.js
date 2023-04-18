@@ -67,5 +67,59 @@ for (let button of addCartButtons) {
     button.addEventListener('click', agregarAlCarrito)
 }
 
+$(document).ready(function() {
+  $('.formulario').submit(function(event) {
+
+    var nombre = $('#nombre').val();
+    var apellido = $('#apellido').val();
+    var email = $('#email').val();
+    
+    validacionCorrecta = true;
+    
+    if(nombre === '' || apellido === '' || email === '') {
+      alert('Por favor complete todos los campos');
+      event.preventDefault();
+      return false;
+    }
+    
+    var regexNombre = /^[a-zA-ZÀ-ÿ\s]+$/;
+    if(!regexNombre.test(nombre)) {
+      $('#nombre-error').text('Por favor ingrese un nombre válido (sólo letras y espacios en blanco)').show();
+      event.preventDefault();
+      var validacionCorrecta = false;
+    } else if (nombre.length < 3) {
+      $('#nombre-error').text('Ingrese un nombre válido (mínimo 3 caracteres)').show();
+      event.preventDefault();
+      var validacionCorrecta = false;
+    } else {
+      $('#nombre-error').hide();
+    }
+
+
+
+    var regexApellido = /^[a-zA-ZÀ-ÿ\s]+$/;
+    if(!regexApellido.test(apellido)) {
+      $('#apellido-error').text('Por favor ingrese un apellido válido (sólo letras y espacios en blanco)').show();
+      event.preventDefault();
+      var validacionCorrecta = false;
+    } else if(apellido.length < 3) {
+      $('#apellido-error').text('El apellido debe tener al menos 3 caracteres').show();
+      event.preventDefault();
+      var validacionCorrecta = false;
+    } else {
+      $('#apellido-error').hide();
+    } 
+
+    var regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if(!regexEmail.test(email)) {
+      $('#email-error').text('Por favor ingrese un email válido').show();
+      event.preventDefault();
+      var validacionCorrecta = false;
+    } else {
+      $('#email-error').hide();
+    }
+      
+   
+    })
 
         
