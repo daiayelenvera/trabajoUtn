@@ -67,6 +67,22 @@
 	  
 }
 
+#pdfBtn {
+	background-color: #3ce5ddce;
+	color: #070707;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+#pdfBtn:hover {
+	background-color: #18bac3c8;
+	color: #fff;
+}
+
+
   nav ul {
     display: flex;
     list-style: none;
@@ -97,6 +113,11 @@ nav ul li {
   section {
 	margin-bottom: 3em;
   }
+  #Hagasupedido{
+	padding: 10%;
+	background-color: #f6838339;
+  }
+  
 
  #contact{
 	
@@ -164,7 +185,7 @@ nav ul li {
   
   li button {
 	background-color: #f8d2a3;
-	color: #333;
+	color: #030303;
 	border: none;
 	padding: 0.5em 1em;
 	border-radius: 5px;
@@ -233,3 +254,13 @@ nav ul li {
 	padding: 1em;
 	margin-top: 3em;
   }
+
+#listaErrores, #errores-contacto {
+	margin-top: 15px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(154, 22, 22);
+	gap: 10px;
+}
